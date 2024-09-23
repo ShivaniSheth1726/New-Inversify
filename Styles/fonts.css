@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Nanum";
+    src: url("../assets/fonts/NanumGothicCoding-Regular.ttf");
+    font-weight: regular;
+  }
+  
+  @font-face {
+    font-family: "Nanum";
+    src: url("../assets/fonts/NanumGothicCoding-Bold.ttf");
+    font-weight: bold;
+  }
+  

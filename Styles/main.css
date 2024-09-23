@@ -1,0 +1,21 @@
+@import url("variables.css");
+@import url("fonts.css")
+
+
+
+/* MARK:Resets */
+/* 
+This CSS reset removes default margin and padding from all elements,
+ensures consistent box-sizing across the board, and sets a clean slate 
+for styling. It applies to all elements, as well as their pseudo-elements 
+(::before and ::after).
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MARK: */
