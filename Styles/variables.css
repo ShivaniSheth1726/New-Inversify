@@ -1,6 +1,19 @@
 :root {
-    --accent: #3469ec;
-    --tints: #eaeaea;
-    --shades: #111;
-    --mono: "Nanum";
-  }
+  --accent: #3469ec;
+  --tints: #eaeaea;
+  --shades: #111;
+  --mono: "Nanum";
+}
+.dark-theme {
+  --accent: #3469ec;
+  --tints: #111;
+  --shades: #eaeaea;
+  --mono: "Nanum";
+}
+
+.light-theme {
+  --accent: #3469ec;
+  --tints: #eaeaea;
+  --shades: #111;
+  --mono: "Nanum";
+}

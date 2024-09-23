@@ -1,7 +1,6 @@
 @import url("variables.css");
-@import url("fonts.css")
-
-
+@import url("fonts.css");
+@import url("utils.css");
 
 /* MARK:Resets */
 /* 
@@ -18,4 +17,67 @@ for styling. It applies to all elements, as well as their pseudo-elements
   box-sizing: border-box;
 }
 
-/* MARK: */
+/* MARK:/* Generic Styles for the Body */
+body {
+  font-family: var(--mono), monospace; /* Sets the font to a monospace type */
+  min-height: 100vh; /* Ensures the body takes at least full viewport height */
+  min-width: 100vw; /* Ensures the body takes at least full viewport width */
+  background: var(--tints); /* Uses a CSS variable for the background color */
+  color: var(--shades); /* Uses a CSS variable for the text color */
+  border: 10px solid #33333312; /* Light border for visual separation */
+
+  /*MARK: Layouts */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  gap: 2rem; /* Adds space between child elements */
+}
+
+/* MARK:Input and Button Styles */
+input,
+button {
+  font-family: inherit; /* Inherits font family from the body for consistency */
+}
+
+/* MARK:Keyboard Input Styles */
+kbd {
+  color: var(--accent); /* Applies accent color to keyboard input elements */
+}
+
+/* MARK:Heading Styles */
+.heading {
+  font-weight: bold; /* Makes the heading text bold */
+  font-size: 3rem; /* Sets a large font size for prominence */
+  text-align: center; /* Centers the heading text */
+}
+
+/*MARK: Description Styles */
+.description {
+  font-size: 1rem; /* Sets a standard font size for description text */
+}
+
+/*MARK: Input Fields Container */
+.aside {
+  display: flex; /* Uses Flexbox to arrange child elements */
+  gap: 1rem; /* Adds space between child elements */
+}
+
+/*MARK: Text Input Styles */
+.input-text {
+  font-size: 1rem; /* Sets the font size for input text */
+  padding: 1rem; /* Adds padding inside the input field */
+  border-radius: 1rem; /* Rounds the corners of the input field */
+  border: none; /* Removes default border */
+  outline: 1px dashed black; /* Adds a dashed outline for focus indication */
+}
+
+/*MARK: Button Styles */
+.btn-reverse {
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  padding: 1rem; /* Adds padding inside the button */
+  border-radius: 50%; /* Makes the button circular */
+  border: none; /* Removes default border */
+  display: grid; /* Uses grid for centering content */
+  place-items: center; /* Centers content within the button */
+}
