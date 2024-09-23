@@ -6,43 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite Inversify App</title>
     <!-- MARK:Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Styles/main.css" />
   </head>
   <body>
-    
-      <h1 class="heading">
-        inversify • <span class="accent">reverse</span> anything
-      </h1>
-      <p class="description">
-        input text and press on the icon or hit the <kbd>Enter</kbd> key
-      </p>
-  
-      <!-- MARK:input fields -->
-      <div class="aside">
-        <input
-          class="input-text"
-          type="text"
-          placeholder="enter some text"
-          autofocus
-          data-input-string
-        />
-        <button class="btn-reverse" data-button-copy>
-          <img src="/refresh.svg" alt="reverse icon" />
-        </button>
-      </div>
-  
-      <!-- MARK:show chip on success -->
-      <span class="chip" data-chip>copied</span>
-  
-      <!-- MARK: toggle theme -->
-      <span class="theme" title="Toggle Theme" data-toggle-theme>
-        <img
-          src="https://img.icons8.com/fluency/50/partly-cloudy-night.png"
-          alt="theme-change"
-          height="24"
-        />
-      </span>
-  
+    <h1 class="heading">
+      inversify • <span class="accent">reverse</span> anything
+    </h1>
+    <p class="description">
+      input text and press on the icon or hit the <kbd>Enter</kbd> key
+    </p>
+
+    <!-- MARK:input fields -->
+    <div class="aside">
+      <input
+        class="input-text"
+        type="text"
+        placeholder="enter some text"
+        autofocus
+        data-input-string
+      />
+      <button class="btn-reverse" data-button-copy>
+        <img src="/refresh.svg" alt="reverse icon" />
+      </button>
+    </div>
+
+    <!-- MARK:show chip on success -->
+    <span class="chip" data-chip>copied</span>
+
+    <!-- MARK: toggle theme -->
+    <span class="theme" title="Toggle Theme" data-toggle-theme>
+      <img
+        src="https://img.icons8.com/fluency/50/partly-cloudy-night.png"
+        alt="theme-change"
+        height="24"
+      />
+    </span>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
